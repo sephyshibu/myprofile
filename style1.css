@@ -1,0 +1,672 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+body{
+        background-color:#211e1e;
+        height: auto;
+        font-family: sans-serif;
+        width: 100%;
+        overflow-x: hidden;
+        
+    }
+/* .container{
+    height: auto;
+    width:100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 30px 20px;
+    overflow: hidden;
+} */
+header{
+    height:100%;
+    width:100%;
+    position: relative;
+}
+.banner{
+    position: relative;
+   
+    width: 100%;
+   
+    height: auto;
+    margin: 0 auto;
+}
+
+.bannerimage img{
+    opacity: 0.2;
+    width:100%;
+    height:auto;
+    position: relative;
+    
+}
+
+.bannertext {
+    position: absolute;
+    top: 40%;
+    left: 80%;
+    transform: translate(-50%, -50%); /* Center the banner text */
+    z-index: 2;
+    width: 100%;
+    overflow: hidden;
+    background-color: #211e1e;
+    max-width:680px;
+    padding: 20px;
+    /* border-radius: 20px; */
+    
+  }
+  
+
+.bannertitle  {
+    color: rgb(225, 33, 33);
+    font-size: 50px;
+    text-align: left;
+    opacity: 1;
+    
+  }
+
+.designrect {
+    position: absolute;
+    top: 49%; 
+    left: 58.5%;
+    z-index: 2;
+    padding: 5px;
+    background-color:rgb(225, 33, 33); 
+    color: #333;
+    max-width: 680px;
+    width: 100%; 
+    /* border-radius: 20px; */
+    
+}
+
+.bannerimage{
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.firstpagecontainer{
+
+
+    position: relative;
+    display: block;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    margin-top: 30px;
+    text-align: center; /* Centers text content */
+    padding: 30px 50px ;
+    z-index: 2;
+    overflow: hidden;
+    /* margin: 20px 30px; */
+    /* background-color: pink; */
+}
+ .halfoval {
+    
+        position: absolute;
+        bottom:0; /* Position the oval at the bottom */
+        left: 0; /* Position the oval at the left */
+        width: 90%; /* Adjust width as needed */
+        height: 95%; /* Adjust height to ensure the shape fits perfectly */
+        background-color: rgb(225, 33, 33);
+        border-radius: 100% 0 0 100%; /* Creates a half-oval shape with the curve facing left */
+        z-index: -1; /* Ensure it lies below the content */
+        transform: rotate(-43deg); /* Rotate the oval to make it diagonal */
+        
+}
+
+.abouttitle{
+    
+    color: white;
+    position: relative;
+    margin-bottom: 60px;
+   
+}
+.abouttitle h1{
+    font-size: 60px;
+}
+
+.aboutcontainer{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.name{
+    padding: 20px 30px;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.name p{
+    color: white;
+    line-height: 1.6;
+    text-align: center;
+}
+.profile{
+    width: 40%;
+    
+   
+}
+.profile img{
+    width: 100%;
+    transform: scale(0.9);
+}
+.skillscontent{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 20px 20px;
+    height: auto;
+    margin-top: 20%;
+   
+}
+.skillsheading h1{
+    margin-bottom: 95px;
+    color: #e34c26;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 60px;
+}
+.background-headingskills {
+    font-size: 100px;
+    color: rgba(225, 33, 33, 0.1); /* Set opacity for the background heading */
+    position: absolute;
+    top:80;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    white-space: nowrap;
+    pointer-events: none; 
+}
+.rectangle1{
+    position: absolute;
+    
+    padding: 20px 30px;
+    background-color: #e34c26;
+    width: 100%;
+    margin-left: 60%;
+    margin-top:2.8%;
+}
+.rectangle2{
+    position: absolute;
+    padding: 20px 30px;
+    background-color: #e34c26;
+    width: 100%;
+    margin-left: 50%;
+    
+}
+.skills{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px 100px;
+    flex-wrap: wrap;
+    
+    
+}
+.progress-container {
+    text-align: center;
+    width: 30%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+/* .progress-container p{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} */
+.progress-circle {
+    width: 150px;
+    height: 150px;
+    background-color: lightgray;
+    border-radius: 50%;
+    position: relative;
+}
+.progress-circle span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+}
+.progress-circle:before { /* it make white circle */
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.progress-circle.html {
+    background-image: conic-gradient(#e34c26 0% 95%, lightgray 98% 100%);
+    margin-bottom: 80px;
+    margin: 20px 60px;
+}
+.progress-circle.html p{
+    position: absolute;
+    top:35%;
+    z-index: 1;
+    left: 35%;
+}
+.progress-circle.html span{
+    position: absolute;
+    top:60%;
+    z-index: 1;
+    left: 53%;
+}
+.progress-circle.css {
+    background-image: conic-gradient(#e34c26 0% 90%, lightgray 95% 100%);
+    margin-bottom: 80px;
+    margin: 20px 60px;
+}
+.progress-circle.css p{
+    position: absolute;
+    top:35%;
+    z-index: 1;
+    left: 35%;
+}
+.progress-circle.css span{
+    position: absolute;
+    top:60%;
+    z-index: 1;
+    left: 53%;
+}
+.progress-circle.javascript {
+    background-image: conic-gradient(#e34c26 0% 80%, lightgray 85% 100%);
+    
+    margin-bottom: 80px;
+    margin: 20px 60px;
+}
+.progress-circle.javascript p{
+    position: absolute;
+    top:35%;
+    z-index: 1;
+    left: 25%;
+}
+.progress-circle.javascript span{
+    position: absolute;
+    top:60%;
+    z-index: 1;
+    left: 55%;
+}
+.progress-circle.java {
+    background-image: conic-gradient(#e34c26 0% 75%, lightgray 85% 100%);
+    margin-bottom: 80px;
+    margin: 20px 60px;
+}
+.progress-circle.java p{
+    position: absolute;
+    top:35%;
+    z-index: 1;
+    left: 35%;
+}
+.progress-circle.java span{
+    position: absolute;
+    top:60%;
+    z-index: 1;
+    left: 53%;
+}
+.progress-circle.figma {
+    background-image: conic-gradient(#e34c26 0% 80%, lightgray 85% 100%);
+    margin-bottom: 80px;
+    margin: 20px 60px;
+}
+.progress-circle.figma p{
+    position: absolute;
+    top:35%;
+    z-index: 1;
+    left: 35%;
+}
+.progress-circle.figma span{
+    position: absolute;
+    top:60%;
+    z-index: 1;
+    left: 53%;
+}
+.progress-circle.wordpress {
+    background-image: conic-gradient(#e34c26 0% 75%, lightgray 85% 100%);
+    margin-bottom: 80px;
+    margin: 20px 60px;
+}
+.progress-circle.wordpress p{
+    position: absolute;
+    top:35%;
+    z-index: 1;
+    left: 25%;
+}
+.progress-circle.wordpress span{
+    position: absolute;
+    top:60%;
+    z-index: 1;
+    left: 53%;
+}
+
+.education-timeline {
+    position: relative;
+    margin: 50px 0;
+    width: 80%;
+    margin: 50px auto;
+    
+    
+}
+.eduheading {
+    margin-bottom:80px;
+    color: #e34c26;
+    text-align: center;
+   margin-top: 150px;
+    font-size:50px;
+    
+    position: relative;
+}
+.background-headingedu {
+    font-size: 100px;
+    color: rgba(225, 33, 33, 0.1); /* Set opacity for the background heading */
+    position: absolute;
+    top:80;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    white-space: nowrap;
+    pointer-events: none; /* Ensures the background text doesn't interfere with other elements */
+}
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+.timeline-item .circle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #e12121;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.timeline-item.right {
+    left: 50%;
+    padding-left: 40px;
+}
+.timeline-item.left {
+    left: 0;
+    padding-right: 40px;
+    text-align: right;
+}
+.timeline-item.right .circle {
+    left: -20px; /* Place circle on the left of right-aligned item */
+}
+.timeline-item.left .circle {
+    right: -20px; 
+}
+.timeline-item.right .timeline-content {
+    left: -100%; /* Shift content to the left */
+}
+
+.timeline-item.left .timeline-content {
+    right: -115%;
+}
+.timeline-content {
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    border-radius: 6px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-right: 80px;
+    margin-bottom: 50px;
+    margin-top: 80px;
+}
+
+.education-timeline::before {
+    content: '';
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    width: 4px;
+    height: 80%;
+    background-color: #ccc;
+    transform: translateX(-50%);
+}
+
+.projects{
+    margin-top: 10%;
+    box-sizing: border-box;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+.background-heading {
+    font-size: 150px;
+    color: rgba(225, 33, 33, 0.1); /* Set opacity for the background heading */
+    position: absolute;
+    top:80;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    white-space: nowrap;
+    pointer-events: none; /* Ensures the background text doesn't interfere with other elements */
+}
+.headingproject{
+    font-size: 80px;
+    color: #e12121;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 200px;
+}
+.solar{
+    background-color:  #e12121;
+    border-radius: 30px;
+    padding: 20px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.solar h3{
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    
+}
+.solar h5{
+    color: white;
+    font-size:25px;
+    padding: 10px;
+    line-height: 1.5;
+}
+.solar p{
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.Reactjs{
+    background-color:  #e12121;
+    border-radius: 30px;
+    padding: 20px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.Reactjs h3{
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    
+}
+.Reactjs h5{
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    line-height:1.5;
+}
+.Reactjs p{
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    text-align: justify;
+    line-height: 1.5;
+}
+.financer{
+    background-color: #e12121;
+    border-radius: 30px;
+    padding: 20px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.financer h3{
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    
+}
+.financer h5{
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.financer p{
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    text-align: justify;
+    line-height: 1.5;
+}
+.diabetes{
+    background-color: #e12121;
+    border-radius: 30px;
+    padding: 20px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.diabetes h3{
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    line-height: 1.5;
+    
+}
+.diabetes h5{
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    line-height: 1.2;
+}
+
+
+.diabetes p{
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    text-align: justify;
+}
+.lstm{
+    background-color:#e12121;
+    border-radius: 30px;
+    padding: 20px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.lstm h3{
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    
+}
+.lstm h5{
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+
+.lstm p{
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    text-align: justify;
+    line-height: 1.5;
+}
+.pi{
+    background-color:#e12121;
+    border-radius: 30px;
+    padding: 20px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.pi h3{
+    color: white;
+    font-size: 25px;
+    padding: 5px;
+    
+}
+.pi h5{
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.pi p{
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    text-align: justify;
+    line-height:1.5;
+}
+.enquiry{
+    padding:10px 30px;
+    
+}
+.encontainer{
+    background-color: red;
+    height: 500px;
+    margin-top:50px;
+}
+form{
+    padding: 10px 50px;
+    background-color: lightslategray;
+    margin: 10px auto;
+    
+    width: 80%;
+
+}
+label{
+    display: block;
+    font-size: 18px;
+}
+input[type="text"]{
+    width: 60px;
+    border: 1px solid red;
+    padding: 10px;
+}
+button{
+    display: block;
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 8px;
+}
