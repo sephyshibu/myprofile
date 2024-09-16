@@ -1,0 +1,314 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    line-height: 1;
+    /* box-sizing: content-box; */
+
+   
+}
+html,body{
+    height: auto;
+}
+
+body{
+   
+    background-color:rgb(23, 23, 23);
+
+}
+
+.container{
+    margin: 0 auto;
+    padding: 10px 30px;
+}
+
+.firstpagecontainer{
+    display: flex;
+    justify-content: space-between;  /* to become side by side profile and about container */
+    height:auto;
+    /* padding: 50px 20px; */
+    flex-wrap: wrap;
+    margin-top: 40px;
+    /* background-color: pink; */
+    width: 100%;
+    
+}
+
+.aboutcontainer{
+    width: 60%; 
+    display: flex;
+    justify-content: center; /* align .name to the center */
+    align-items: center; /* Center .name horizontally */
+    /* padding: 20px; */
+    position: relative;
+    box-sizing: border-box;
+}
+
+.name{
+    
+    /* padding: 10px; */
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+    height: auto;
+    /* max-width: 500px; Limit the width of the .name container */
+    position: relative;
+    /* top: 10px;  */
+    opacity: 0; /* Initially hidden for animation */
+    transform: translateX(100%); /* Start from right */
+    animation: slideInFromRight 1s forwards; /* Apply animation */
+}
+@keyframes slideInFromRight {
+    to {
+        transform: translateX(0); /* End at the original position */
+        opacity: 1; /* Fade in */
+    }
+}
+
+.name h1{
+    
+    font-size: 50px;
+    color:  white;
+    padding: 20px 10px;
+    
+    
+    /* margin: 0 0 2px 0; */
+    /* margin-top: 10px; */
+}
+.name .title{
+    margin-top: 5px;
+    font-size: 24px;
+    color:  white;
+    margin-bottom: 18px;
+    padding: 5px;
+}
+.name .about{
+   
+    margin-top:5px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: justify;
+    color:  white;
+    letter-spacing: 0.8;
+    padding:10px 10px;
+    height: auto;
+}
+.profile{
+    width: 40%;
+    height: auto;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideInFromLeft 1s forwards;
+}
+
+@keyframes slideInFromLeft {
+    to {
+        transform: translateX(0); /* End at the original position */
+        opacity: 1; /* Fade in */
+    }
+}
+
+
+.profile img{
+    width: 100%;
+    height: auto;
+    transform: scale(0.6);
+    border: 8px solid white;
+    opacity: 0.9;
+}
+
+.skills{
+    margin-top: 10%;
+    box-sizing: border-box;
+    height: 500px;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: slidefrombottom 1s forwards;
+}
+@keyframes slidefrombottom {
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.skills h1{
+    font-size: 50px;
+    color: #032438;
+    padding-bottom: 50px;
+    text-align: left;
+}
+.skills p{
+    color: #032438;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.skillshtml{
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #032438;
+    font-size: 25px;
+    width: 98%;
+    background:linear-gradient(to right, #07446b, #4b89ab);
+    
+}
+
+
+.skillscss{
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #032438;
+    font-size: 25px;
+    width: 95%;
+    background:linear-gradient(to right, #07446b, #4b89ab);
+}
+.skillsjs{
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #032438;
+    font-size: 25px;
+    width: 85%;
+    background:linear-gradient(to right, #07446b, #4b89ab);
+}
+.skillsreact{
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #032438;
+    font-size: 25px;
+    width: 75%;
+    background:linear-gradient(to right, #07446b, #4b89ab);
+}
+
+.educationalqualification{
+    margin-top: 10%;
+    box-sizing: border-box;
+    height: auto;
+}
+.headingeducational{
+    font-size: 50px;
+    color: #032438;
+    padding-bottom: 50px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.mtech{
+    background-color:  #08314a;
+    border-radius: 5px;
+    padding: 20px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.mtech h3{
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+    
+}
+.mtech h5{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+.mtech p{
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.btech{
+    background-color:  #08314a;
+    border-radius: 5px;
+    padding: 20px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.btech h3{
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+    
+}
+.btech h5{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+.btech p{
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+}
+.higher{
+    background-color:  #08314a;
+    border-radius: 5px;
+    padding: 20px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.higher h3{
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+    
+}
+
+.higher p{
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+}
+.primary{
+    background-color:  #08314a;
+    border-radius: 5px;
+    padding: 20px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.primary h3{
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+    
+}
+
+.primary p{
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Apply the bounce animation to the mtech and btech divs */
+.mtech, .btech ,.higher, .primary {
+    animation: bounce 2s ease infinite;
+}
+
+.en-container{
+    padding: 50px 20px;
+    background-color: red;
+    width: 100%;
+    height: 1000px;
+}
